@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+}
+
+/*
+=======================================
+Header rules
+=======================================
+*/
+
+header {
+  font-family: 'Piedra', cursive;
+}
+
+.logo {
+  font-size: 44px;
+} 
+
+.navbar {
+  background-color: #8b5c04;
+}
+
+.navbar a {
+  color: #181818;
+}
+
+.navbar a:hover {
+  color: #f3f3f3;
+}
+
+.nav-link {
+  font-size: 22px;
+}
+
+.navbar-toggler { 
+  border-color: #181818;
+  border-width: 3px;
+} 
+
+.navbar-toggler-icon { 
+  background-image: url('../images/icons8-menu-100.png');
+}
+
+/*
+=======================================
+Main content rules
+=======================================
+*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 35px 0;
+  min-height: 75vh;
+}
+
+main h1, main h2 {
+  color: #f3f3f3;
+}
+
+main h1 {
+  width: 80%;
+  text-align: center;
+  font-family: 'Piedra', cursive;
+  font-size: 44px;
+}
+
+cat-gallery {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+
+cat-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Piedra', cursive;
+  font-size: 24px;
+  border: 5px solid #815b13;
+  padding: 10px;
+  box-shadow: 3px -3px #000000;
+  background-color: #ac7f2d;
+}
+
+cat-image img {
+  width: 100%;
+}
+
+breed-info {
+  width: 75%;
+  margin: 25px;
+}
+
+table {
+  margin-top: 25px;
+  font-family: 'Bitter', serif;
+}
+
+.collections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 25px;
+  max-width: 80%;
+}
+
+.collections cat-image {
+  margin-bottom: 30px;
+}
+/*
+=======================================
+Search Form
+=======================================
+*/
+
+.breedpage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+breed-search {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 25px 0;
+}
+
+form {
+  width: 80%;
+}
+
+/*
+=======================================
+Footer rules
+=======================================
+*/
+
+footer {
+  background-color: #9C6806;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 12vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+footer a, footer a:visited {
+  color: #f3f3f3;
+}
+
+/*
+=======================================
+Media queries
+=======================================
+*/
+
+@media screen and (max-width: 1366px) {
+  footer {
+    height: 15vh;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  cat-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  cat-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+  footer p {
+    font-size: 24px;
+  }
+}
